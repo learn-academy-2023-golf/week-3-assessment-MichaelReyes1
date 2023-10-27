@@ -63,13 +63,17 @@
           padding: "10px"
         }
         // No need to change anything ABOVE this line ^
+        //added <div> & </div> on line 70 and 88 to wrap the components withing return statement.
+        //corrected onClick for the Click to draw a card button to refer to drawCard function.
+        //changed onclick to onClick for the return cards and shuffle deck button. 
 
         return (
+          <div>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -80,6 +84,7 @@
                 </div>
               )
             })}
+          </div>
           </div>
         )
       }
